@@ -61,3 +61,20 @@ Sun Mar 22 07:27:36 PM UTC 2026:
  tests:  2|3
 total_score: 20/70
 45368bd
+Sun Mar 22 07:30:38 PM UTC 2026: 
+ exercises.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:68:14: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
+   68 |          suma+=actual;
+      |              ^~
+exercises.c:69:17: error: implicit declaration of function ‘nest’; did you mean ‘next’? [-Wimplicit-function-declaration]
+   69 |          actual=nest(L);
+      |                 ^~~~
+      |                 next
+exercises.c:69:16: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   69 |          actual=nest(L);
+      |                ^
+4b1637d
