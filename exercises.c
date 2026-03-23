@@ -138,10 +138,10 @@ int parentesisBalanceados(char *cadena) {
 
          if(c== ')' || c== ']' || c== '}')
          {
-
-            while(top(aux)!= NULL)
+            char* primer = (char*) top(aux);
+            while(primer!= NULL)
                {
-                  if(c == top(aux))
+                  if(c == primer
                   {
                      pop(aux);
                   }
