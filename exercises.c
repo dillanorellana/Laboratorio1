@@ -139,7 +139,10 @@ int parentesisBalanceados(char *cadena) {
          if(c== ')' || c== ']' || c== '}')
          {
             
-            if(top(aux)==NULL) return 0;
+            if(top(aux)==NULL){
+               free(aux);
+               return 0;
+            } 
             char* primer = (char*) top(aux);
 
             if((c==')' && *primer == '(') ||
@@ -150,10 +153,20 @@ int parentesisBalanceados(char *cadena) {
                pop(aux);
             }
             else{
+               free(primer);
+
+               while(top(aux)!=NULL)
+                  {
+                     pop(aux);
+                  }
+               
+               free(aux);
                return 0;
             }
          }
       }
 
-   return(top(aux)== NULL);
+   int retorno = (top(aux)== NULL);
+   free(aux);
+   return retorno;
 }
