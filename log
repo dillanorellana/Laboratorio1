@@ -184,3 +184,14 @@ exercises.c:148:16: error: expected expression before ‘}’ token
       |                ^
 cc1: all warnings being treated as errors
 17fb7ed
+Mon Mar 23 01:02:53 AM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:144:24: error: comparison between pointer and integer [-Werror]
+  144 |                   if(c == primer)
+      |                        ^~
+cc1: all warnings being treated as errors
+a387227

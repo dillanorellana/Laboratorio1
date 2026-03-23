@@ -141,7 +141,7 @@ int parentesisBalanceados(char *cadena) {
             char* primer = (char*) top(aux);
             while(primer!= NULL)
                {
-                  if(c == primer
+                  if(c == primer)
                   {
                      pop(aux);
                   }
