@@ -206,3 +206,26 @@ exercises.c:142:26: error: comparison between pointer and integer [-Werror]
       |                          ^~
 cc1: all warnings being treated as errors
 eee7ec3
+Mon Mar 23 01:27:36 AM UTC 2026: 
+ exercises.c | 12 +++++++++---
+ 1 file changed, 9 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:145:33: error: comparison between pointer and integer [-Werror]
+  145 |             if(c==')' && primer == '(' ||
+      |                                 ^~
+exercises.c:146:32: error: comparison between pointer and integer [-Werror]
+  146 |                c==']' && primer== '[' ||
+      |                                ^~
+exercises.c:145:23: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  145 |             if(c==')' && primer == '(' ||
+      |                ~~~~~~~^~~~~~~~~~~~~~~~
+exercises.c:147:34: error: comparison between pointer and integer [-Werror]
+  147 |                c== '}' && primer == '{')
+      |                                  ^~
+exercises.c:147:24: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  147 |                c== '}' && primer == '{')
+      |                ~~~~~~~~^~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+fad385f
