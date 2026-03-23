@@ -113,3 +113,26 @@ Sun Mar 22 07:57:13 PM UTC 2026:
  tests:  4|1
 total_score: 50/70
 e4da833
+Mon Mar 23 12:58:36 AM UTC 2026: 
+ exercises.c | 24 ++++++++++++++++++++++++
+ 1 file changed, 24 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:134:31: error: expected expression before ‘char’
+  134 |             char *puntero = (*char) malloc(sizeof(char));
+      |                               ^~~~
+exercises.c:134:37: error: expected ‘,’ or ‘;’ before ‘malloc’
+  134 |             char *puntero = (*char) malloc(sizeof(char));
+      |                                     ^~~~~~
+exercises.c:135:25: error: expected ‘;’ before ‘push’
+  135 |             *puntero = c
+      |                         ^
+      |                         ;
+  136 |             push(aux,puntero);
+      |             ~~~~         
+exercises.c:144:24: error: comparison between pointer and integer [-Werror]
+  144 |                   if(c == top(aux))
+      |                        ^~
+cc1: all warnings being treated as errors
+73ce91e
